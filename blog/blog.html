@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ddb9f78a5a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./blog.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="./blog.js"></script>
+  <title>백발이의 blog</title>
+</head>
+<body>
+  <!-- banner -->
+  <div class="banner">
+    <form action="" class="banner__form">
+      <label class="banner__label" for="country">사용하고 싶은 언어를 선택하세요 : </label>
+      <select name="language" id="country" class="banner__select">
+        <option value="korea" selected>한국어</option>
+        <option value="america">영어</option>
+        <option value="japan">일본어</option>
+        <option value="china">중국어</option>
+      </select>
+      <input type="button" value="선택" class="banner__submit">
+    </form>
+    <div class="banner__close-btn">&times;</div>
+  </div>
+  <!-- end of banner -->
+  <!-- top-btn -->
+  <a href="#" class="top-arrow">
+    <i class="far fa-arrow-alt-circle-up"></i>
+  </a>
+  <!-- end of top-btn -->
+  <!-- container-box -->
+  <div class="container-box">
+    <!-- nav -->
+    <ul class="nav">
+      <li class="nav__item"><a href="#" class="nav__link selected" id="home">home</a></li>
+      <li class="nav__item"><a href="#" class="nav__link" id="profile">profile</a></li>
+      <li class="nav__item"><a href="#" class="nav__link" id="portfolio">portfolio</a>
+        <svg class="down-arrow">
+          <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+        </svg>
+      </li>
+      <ul class="portfolio-dropdown">
+        <li class="portfolio-dropdown__item"><a href="#" class="portfolio-dropdown__link">project 1</a></li>
+        <li class="portfolio-dropdown__item"><a href="#" class="portfolio-dropdown__link">project 2</a></li>
+        <li class="portfolio-dropdown__item"><a href="#" class="portfolio-dropdown__link">project 3</a></li>
+      </ul>
+      <li class="nav__item"><a href="#" class="nav__link" id="posts">posts</a></li>
+      <li class="nav__item"><a href="#" class="nav__link" id="contact">contact</a></li>
+    </ul>
+    <!-- end of nav -->
+    <!-- content-home -->
+    <div class="content-home" id="home">
+      <h1 id="top">Home</h1>
+      <hr>
+      <br>
+      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sint fugiat in aut id magnam similique cumque. Quasi asperiores iste tempora similique ut fugiat, sit error deleniti veritatis cupiditate iusto.</h3>
+      <br>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+  </div>
+  <!-- end of content-home -->
+  <!-- content-about -->
+  <div class="content-profile">
+    <h1>Profile</h1>
+    <hr>
+    <br>
+    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sint fugiat in aut id magnam similique cumque. Quasi asperiores iste tempora similique ut fugiat, sit error deleniti veritatis cupiditate iusto.</h3>
+    <br>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>      <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>      <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>      <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>      <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>      <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>      <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>      <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>      <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>      <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>      <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+</div>
+<!-- end of content-about -->
+<!-- content-projects -->
+<div class="content-portfolio">
+  <h1>Portfolio</h1>
+  <hr>
+  <br>
+  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sint fugiat in aut id magnam similique cumque. Quasi asperiores iste tempora similique ut fugiat, sit error deleniti veritatis cupiditate iusto.</h3>
+  <br>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
+<!-- end of content-projects -->
+<!-- content-whyus -->
+<div class="content-posts">
+  <h1>Posts</h1>
+  <hr>
+  <br>
+  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sint fugiat in aut id magnam similique cumque. Quasi asperiores iste tempora similique ut fugiat, sit error deleniti veritatis cupiditate iusto.</h3>
+  <br>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
+<!-- end of content-whyus -->
+<!-- content-contact -->
+<div class="content-contact">
+  <h1>Contact</h1>
+  <hr>
+  <br>
+  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sint fugiat in aut id magnam similique cumque. Quasi asperiores iste tempora similique ut fugiat, sit error deleniti veritatis cupiditate iusto.</h3>
+  <br>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>      <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
+<!-- end of contact -->
+</div>
+<!-- end of container-box -->
+  
+</body>
+</html>
