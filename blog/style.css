@@ -52,6 +52,7 @@ p {
 }
 
 .banner__title-text {
+  text-decoration: none;
   position: absolute;
   color: #fff;
   top: 50%;
@@ -604,9 +605,9 @@ div[class^="content-"] {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 35%;
-  height: 48%;
+  height: 50%;
   background-color: #fff;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 5px;
 }
 
@@ -617,7 +618,7 @@ div[class^="content-"] {
   letter-spacing: .7rem;
   color: #6BCDDA;
   font-family: 'Nanum Pen Script', cursive;
-  margin-bottom: 3rem;
+  margin-bottom: 2.2rem;
 }
 
 .signup-popup__form {

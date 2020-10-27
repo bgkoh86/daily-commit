@@ -42,7 +42,7 @@ $(".nav__link").click(function() {
 
    //  SHOW TOP ARROW BTN
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 250) {
+  if ($(document).scrollTop() > 100) {
   $('.top-arrow').addClass('show');
   } else {
   $('.top-arrow').removeClass('show');
