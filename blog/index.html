@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Hi+Melody&family=Poiret+One&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ddb9f78a5a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./blog.css">
+  <link rel="stylesheet" href="./style.css">
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-  <script src="./blog.js"></script>
+  <script src="./main.js"></script>
   <title>백발이의 blog</title>
 </head>
 <body>
@@ -25,11 +26,30 @@
     <div class="banner__close-btn">&times;</div>
   </div>
   <!-- end of banner -->
-  <!-- top-btn -->
+  <!-- banner title -->
+  <div class="banner__title">
+    <h1 class="banner__title-text"></h1>
+    <ul class="banner__login-box">
+      <li class="banner__title__item"><a href="#">후원</a></li>
+      <li class="banner__title__item"><a href="#signup">회원가입</a></li>
+      <li class="banner__title__item"><a href="#popup">로그인</a></li>
+      <li class="banner__title__item"><a href="#">도움말</a></li>
+    </ul>
+    <form action="#" class="search">
+      <input type="text" class="search__input" placeholder="Search...">
+      <button class="search__button">
+        <svg class="search__icon">
+          <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+  <!-- end of banner title -->
+  <!-- to the top-btn -->
   <a href="#" class="top-arrow">
     <i class="far fa-arrow-alt-circle-up"></i>
   </a>
-  <!-- end of top-btn -->
+  <!-- end of to the top-btn -->
   <!-- container-box -->
   <div class="container-box">
     <!-- nav -->
@@ -52,7 +72,7 @@
     <!-- end of nav -->
     <!-- content-home -->
     <div class="content-home" id="home">
-      <h1 id="top">Home</h1>
+      <h1 id="top">WELCOME</h1>
       <hr>
       <br>
       <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sint fugiat in aut id magnam similique cumque. Quasi asperiores iste tempora similique ut fugiat, sit error deleniti veritatis cupiditate iusto.</h3>
@@ -123,7 +143,7 @@
   <!-- end of content-home -->
   <!-- content-about -->
   <div class="content-profile">
-    <h1>Profile</h1>
+    <h1>PROFILE</h1>
     <hr>
     <br>
     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sint fugiat in aut id magnam similique cumque. Quasi asperiores iste tempora similique ut fugiat, sit error deleniti veritatis cupiditate iusto.</h3>
@@ -194,7 +214,7 @@
 <!-- end of content-about -->
 <!-- content-projects -->
 <div class="content-portfolio">
-  <h1>Portfolio</h1>
+  <h1>PORTFOLIO</h1>
   <hr>
   <br>
   <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sint fugiat in aut id magnam similique cumque. Quasi asperiores iste tempora similique ut fugiat, sit error deleniti veritatis cupiditate iusto.</h3>
@@ -265,7 +285,7 @@
 <!-- end of content-projects -->
 <!-- content-whyus -->
 <div class="content-posts">
-  <h1>Posts</h1>
+  <h1>POSTS</h1>
   <hr>
   <br>
   <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sint fugiat in aut id magnam similique cumque. Quasi asperiores iste tempora similique ut fugiat, sit error deleniti veritatis cupiditate iusto.</h3>
@@ -336,7 +356,7 @@
 <!-- end of content-whyus -->
 <!-- content-contact -->
 <div class="content-contact">
-  <h1>Contact</h1>
+  <h1>CONTACT</h1>
   <hr>
   <br>
   <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sint fugiat in aut id magnam similique cumque. Quasi asperiores iste tempora similique ut fugiat, sit error deleniti veritatis cupiditate iusto.</h3>
@@ -407,6 +427,99 @@
 <!-- end of contact -->
 </div>
 <!-- end of container-box -->
+<!-- login popup -->
+<div class="login-popup" id="popup">
+  <div class="login-popup__content">
+    <form class="login-popup__form">
+      <p class="login-popup__logo">백발이의 코딩일기</p>
+      <input type="email" class="login-popup__input-email" placeholder="이메일">
+      <input type="password" class="login-popup__input-password" placeholder="비밀번호">
+      <input type="submit" class="login-popup__submit" value="로그인">
+      <div class="login-popup__forgot-password">
+        <p class="login-popup__forgot-password-text">비밀번호를 잊어버리셨나요?</p>
+        <a href="#" class="login-popup__forgot-password-link">비밀번호 찾기</a>
+      </div>
+    </form>
+    <div class="login-popup__grid-wrapper">
+      <a href="#" class="login-popup__facebook">
+        <svg class="login-popup__facebook-icon">
+          <use xlink:href="img/sprite.svg#icon-facebook"></use>
+        </svg>
+        <span>페이스북 로그인</span>
+      </a>
+      <a href="#" class="login-popup__github">
+        <svg class="login-popup__github-icon">
+          <use xlink:href="img/sprite.svg#icon-github"></use>
+        </svg>
+        <span>깃허브 로그인</span>
+      </a>
+      <a href="#" class="login-popup__google">
+        <svg class="login-popup__google-icon">
+          <use xlink:href="img/sprite.svg#icon-google"></use>
+        </svg>
+        <span>구글 로그인</span>
+      </a>
+      <a href="#" class="login-popup__apple">
+        <svg class="login-popup__apple-icon">
+          <use xlink:href="img/sprite.svg#icon-appleinc"></use>
+        </svg>
+        <span>애플 로그인</span>
+      </a>
+      <div class="login-popup__signup">
+        <p class="login-popup__signup-text">아직 회원이 아니신가요?</p>
+        <a href="#" class="login-popup__signup-link">회원 가입하기</a>
+      </div>
+    </div>
+  <a href="#home" class="login-popup__close">&times;</a>
+  </div>
+</div>
+<!-- end of login popup -->
+<!-- signup popup -->
+<div class="signup-popup" id="signup">
+  <div class="signup-popup__content">
+    <p class="signup-popup__logo">회원가입</p>
+    <form class="signup-popup__form">
+      <input type="email" class="signup-popup__input-email" placeholder="이메일">
+      <a href="#" class="signup-popup__google">
+        <svg class="login-popup__google-icon">
+          <use xlink:href="img/sprite.svg#icon-google"></use>
+        </svg>
+        구글 가입
+      </a>
+      <input type="email" class="signup-popup__input-email" placeholder="이메일 확인">
+      <a href="#" class="signup-popup__facebook">
+        <svg class="login-popup__facebook-icon">
+          <use xlink:href="img/sprite.svg#icon-facebook"></use>
+        </svg>
+        페이스북 가입
+      </a>
+      <input type="email" class="signup-popup__input-email" placeholder="비밀번호">
+      <a href="#" class="signup-popup__github">
+        <svg class="login-popup__github-icon">
+          <use xlink:href="img/sprite.svg#icon-github"></use>
+        </svg>
+        깃허브 가입
+      </a>
+      <input type="email" class="signup-popup__input-email" placeholder="비밀번호 확인">
+      <a href="#" class="signup-popup__apple">
+        <svg class="login-popup__apple-icon" id="login-popup-apple-icon">
+          <use xlink:href="img/sprite.svg#icon-appleinc"></use>
+        </svg>
+        애플 가입
+      </a>
+    </form>
+    <div class="signup-popup__flex-wrapper">
+      <div class="signup-popup__checkbox-wrapper">
+        <label for="signup-checkbox">블로그의 다양한 소식을 받아보시겠어요?</label>
+        <input type="checkbox" id="signup-checkbox" class="signup-popup__checkbox">
+      </div>
+      <input type="submit" class="signup-popup__btn" value="가입하기" >
+      <p class="signup-popup__text">가입하기를 클릭함으로써 블로그의 <a href="#">이용약관</a>, <a href="#">개인정보취급방침</a>에 동의합니다.</p>
+    </div>
+  <a href="#home" class="signup-popup__close">&times;</a>
+  </div>
+</div>
+<!-- end of signup popup -->
   
 </body>
 </html>

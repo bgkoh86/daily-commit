@@ -1,0 +1,737 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: inherit;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: inherit;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+/****************************/
+/********** BANNER **********/
+/****************************/
+.banner {
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #8e9eab, #eef2f3);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__title {
+  height: 10vh;
+  width: 100vw;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  background-image: linear-gradient(to right, #EAECC6, #2BC0E4);
+}
+
+.banner__title-text {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Hi Melody', cursive;
+  font-weight: 600;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  /* text-shadow: 0px 1px #ffffff, 4px 4px 0px #dad7d7; */
+}
+
+.banner__login-box {
+  position: absolute;
+  top: 1.5rem;
+  right: 3rem;
+  list-style: none;
+  display: flex;
+}
+
+.banner__title__item:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 70%;
+  background-color: grey;
+  position: absolute;
+  top: 2px;
+}
+
+.banner__login-box a {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  text-decoration: none;
+  color: grey;
+  transition: all .4s;
+}
+
+.banner__login-box a:hover {
+  color: #fff;
+}
+
+.banner__select {
+  width: 15rem;
+  height: 3.5rem;
+  border-radius: 5px;
+  text-align-last: center;
+  font-size: 1.6rem;
+}
+
+.banner__label {
+  font-size: 1.6rem;
+}
+
+.banner__close-btn {
+  font-size: 2.5rem;
+  font-weight: 600;
+  position: absolute;
+  top: 1.5rem;
+  right: 3rem;
+  color: grey;
+  cursor: pointer;
+}
+
+.banner__close-btn:hover {
+  color: black;
+}
+
+.banner__submit {
+  margin-left: 1rem;
+  height: 3.3rem;
+  width: 5rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #fff;
+  background-color: #2BC0E4;
+  color: #fff;
+  letter-spacing: .3rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  position: absolute;
+}
+
+.banner__submit:active {
+  transform: translateY(.1rem);
+}
+
+/****************************/
+/********** SEARCH **********/
+/****************************/
+.search {
+  position: absolute;
+  top: 5rem;
+  left: 85vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__input {
+  width: 20rem;
+  height: 3.2rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background-color: #DCDCDC;
+  transition: all .2s;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  margin-right: -3.5rem;
+}
+
+.search__input:focus {
+  width: 22rem;
+  background-color: #EAECC6;
+}
+
+.search__input:focus + .search__button {
+  background-color: #EAECC6;
+}
+
+.search__input::placeholder {
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.search__button {
+  border: none;
+  outline: none;
+  background-color: #DCDCDC;
+  transition: all .2s;
+}
+
+.search__icon {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+/***************************************/
+/********** TO THE TOP BUTTON **********/
+/***************************************/
+.top-arrow {
+  display: inline-block;
+  font-size: 3.8rem;
+  position: fixed;
+  right: 5rem;
+  bottom: 4rem;
+  color: #00BFFF;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/********************************/
+/********** NAVIGATION **********/
+/********************************/
+.container-box {
+  display: flex;
+  position: relative;
+}
+
+.nav {
+  list-style: none;
+  min-width: 18rem;
+  font-size: 1.8rem;
+  background-image: linear-gradient(#EAECC6, #2BC0E4);
+  height: 100%;
+  position: fixed;
+  top: 10vh;
+  left: 0;
+}
+
+.nav__item:not(:first-child) {
+  position: relative;
+}
+
+#portfolio {
+  position: relative;
+}
+
+.down-arrow {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  position: absolute;
+  top: 1.4rem;
+  right: 1.4rem;
+  z-index: 2;
+  transition: all .3s;
+  fill: black;
+}
+
+.rotate-arrow {
+  transform: rotate(180deg);
+}
+
+.portfolio-dropdown {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-decoration: underline;
+  margin: 0 auto;
+  display: none;
+}
+
+.portfolio-dropdown__link,
+.portfolio-dropdown__visited {
+  text-decoration: none;
+  color: black;
+}
+
+.portfolio-dropdown__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.7rem;
+  display: block;
+  text-align: center;
+  transition: all .3s;
+}
+
+.portfolio-dropdown__link:hover {
+  color:#DA70D6;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__item::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: #2BC0E4;
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.3s cubic-bezier(1, 0.01, 0.1, 0.98) 0.2s;
+}
+
+.nav__item:hover::before {
+  width: 100%;
+  transform: scaleY(1);
+  opacity: 0.5;
+}
+
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.2rem;
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  transition: color .2s;
+}
+
+.selected {
+  background-color: #2BC0E4;
+  opacity: .8;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/******************************/
+/********** CONTENTS **********/
+/******************************/
+div[class^="content-"] {
+  padding: 2.5rem 5rem 3rem 5rem;
+  margin-top: 10vh;
+  margin-left: 17rem;
+}
+
+.content-home {
+  width: 100vw;
+  height: 100%;
+  padding: 2rem;
+}
+
+.content-profile {
+  width: 100vw;
+  height: 100%;
+  display: none;
+}
+
+.content-portfolio {
+  width: 100vw;
+  height: 100%;
+  display: none;
+}
+
+.content-posts {
+  width: 100vw;
+  height: 100%;
+  display: none;
+}
+
+.content-contact {
+  width: 100vw;
+  height: 100%;
+  display: none;
+}
+
+/*********************************/
+/********** LOGIN-POPUP **********/
+/*********************************/
+.login-popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, .8);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+.login-popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.login-popup__content {
+  width: 22%;
+  height: 55%;
+  background-color: #fff;
+  padding: 2.5rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, .2);
+  position: absolute;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-popup__close:link,
+.login-popup__close:visited {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: grey;
+  position: absolute;
+  top: 1.8rem;
+  right: 2.5rem;
+  display: inline-block;
+  transition: all .2s;
+}
+
+.login-popup__close:hover {
+  color: black;
+}
+
+.login-popup__form {
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+  height: 60%;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.login-popup__form input {
+  height: 4.5rem;
+  outline-color: #6BCDDA;
+  border: none;
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.login-popup__form input::placeholder {
+  color: darkgrey;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+.login-popup__submit {
+  background-color: #5BCADD !important;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  cursor: pointer;
+}
+
+{
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: grey;
+}
+
+.login-popup__logo {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 4rem;
+  color: #6BCDDA;
+  padding-bottom: 1.5rem;
+  font-weight: 400;
+  letter-spacing: .3rem;
+}
+
+.login-popup__grid-wrapper {
+  width: 90%;
+  height: 30%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, minmax(3rem, 1fr));
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+.login-popup__grid-wrapper a {
+  text-decoration: none;
+}
+
+.login-popup__grid-wrapper a:not(:last-child) {
+  height: 4rem;
+  border: .1px solid #DCDCDC;
+  font-size: 1.45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+}
+
+.login-popup__grid-wrapper span {
+  margin-left: 1.6rem;
+  font-weight: 500;
+  color: grey;
+}
+
+.login-popup__signup {
+  grid-column: 1 / -1;
+  grid-row: 3 / -1;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-popup__signup-text,
+.login-popup__forgot-password-text { 
+  font-size: 1.6rem;
+  font-weight: 320;
+  color: grey;
+  margin: 1rem 0;
+}
+
+.login-popup__signup-link,
+.login-popup__forgot-password-link { 
+  color: grey;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.login-popup__grid-wrapper svg[class$="icon"] {
+  fill: grey;
+  position: absolute;
+}
+
+.login-popup__facebook-icon {
+  width: 1.7rem;
+  height: 1.7rem;
+  top: 9px;
+  left: 2rem;
+}
+
+.login-popup__google-icon {
+  width: 1.7rem;
+  height: 1.7rem;
+  top: 9px;
+  left: 3rem;
+}
+
+.login-popup__github-icon {
+  width: 1.9rem;
+  height: 1.9rem;
+  top: 9px;
+  left: 2.2rem;
+}
+
+.login-popup__apple-icon {
+  top: 6.5px;
+  left: 3rem;
+  width: 1.9rem;
+  height: 1.9rem;
+}
+
+/**********************************/
+/********** SIGNUP-POPUP **********/
+/**********************************/
+.signup-popup {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, .8);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+.signup-popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.signup-popup__close:link,
+.signup-popup__close:visited {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: grey;
+  position: absolute;
+  top: 1.8rem;
+  right: 2.5rem;
+  display: inline-block;
+  transition: all .2s;
+}
+
+.signup-popup__close:hover {
+  color: black;
+}
+
+.signup-popup__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: 48%;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 5px;
+}
+
+.signup-popup__logo {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: .7rem;
+  color: #6BCDDA;
+  font-family: 'Nanum Pen Script', cursive;
+  margin-bottom: 3rem;
+}
+
+.signup-popup__form {
+  display: grid;
+  grid-template-columns: 40% 30%;
+  grid-template-rows: repeat(4, 4rem);
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 3rem;
+  justify-content: center;
+  
+  margin: 2rem 0;
+}
+
+.signup-popup__form input {
+  height: 4.5rem;
+  outline-color: #6BCDDA;
+  border: none;
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.signup-popup__form input::placeholder {
+  color: darkgrey;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+.signup-popup__form a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: orange;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  color: #fff;
+  font-style: italic;
+  border-radius: 3px;
+  font-weight: 600;
+  border: 0.5px solid #DCDCDC;
+}
+
+.signup-popup__form svg {
+  margin-right: .8rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #fff;
+}
+
+#login-popup-apple-icon {
+  fill: black;
+}
+
+.signup-popup__form a.signup-popup__google {
+  background-color: #EA4435;
+}
+
+.signup-popup__form a.signup-popup__facebook {
+  background-color: #4267B2;
+}
+
+.signup-popup__form a.signup-popup__github {
+  background-color: #333333;
+}
+
+.signup-popup__form a.signup-popup__apple {
+  background-color: #fff;
+  color: black;
+}
+
+.signup-popup__flex-wrapper {
+  margin: 3rem 0 0 8rem;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.signup-popup__btn {
+  height: 5rem;
+  outline-color: #6BCDDA;
+  border: none;
+  border-radius: 5px;
+  background-color: #6BCDDA;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  margin: 2rem 0 .5rem 0;
+  cursor: pointer;
+}
+
+.signup-popup__checkbox-wrapper label,
+.signup-popup__text {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  color: dimgrey;
+  font-weight: 300;
+}
+
+.signup-popup__checkbox {
+  width: 1.4rem;
+  height: 1.4rem;
+  position: absolute;
+  top: 1px;
+}
+
+.signup-popup__text a {
+  color: #20BF78;
+  line-height: 1.4;
+}
+
+
+

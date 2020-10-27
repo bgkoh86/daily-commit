@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+  // TITLE-TYPING LOGIC
+
+const heading = "백발이의 코딩일기";
+let i = 0;
+
+const typing = () => {
+  if (i < heading.length) {
+    document.querySelector(".banner__title-text").innerHTML += heading.charAt(i);
+    i++;
+    setTimeout(typing, 120);
+  }
+};
+
   // SUB-MENU DISPLAY
   $("#portfolio").click(function() {
     $(".portfolio-dropdown").slideToggle();
@@ -22,9 +35,9 @@ $(".nav__link").click(function() {
 
   // BANNER CLOSE
   $(".banner__close-btn").click(function() {
-    $(".banner").css("display","none");
-    $(".nav").css("top", "0");
-    $("div[class^='content-']").css("margin-top", "0");
+    $(".banner").slideUp();
+    $(".banner__title").delay(300).slideDown();
+    setTimeout(typing, 800);
   })
 
    //  SHOW TOP ARROW BTN
