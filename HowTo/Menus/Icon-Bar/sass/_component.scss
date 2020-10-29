@@ -1,0 +1,63 @@
+// Vertical icon-bar
+.icon-bar {
+    display: flex;
+    flex-direction: column;
+    
+    // 플렉스하면 width가 100%가 되는데 position을 fixed / absolute로 바꿔주면 너비가 자식요소에 맞게 조절됨.
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+    background-color: #555;
+
+    &__link {
+        padding: 2rem;
+
+        &--active {
+            background-color: #4caf50;
+        }
+
+    }
+
+    &__link:not(:last-child) {
+        border-bottom: 1px solid #eee;
+    }
+
+    &__icon {
+        width: 5rem;
+        height: 5rem;
+        fill: #fff;
+    }
+}
+
+// Horizontal icon-bar 
+.icon-bar-horizontal {
+    display: flex;
+
+    // 플렉스하면 width가 100%가 되는데 position을 fixed / absolute로 바꿔주면 너비가 자식요소에 맞게 조절됨.
+    position: fixed;
+    top: 0;
+    right:0;
+    
+    background-color: #555;
+    
+
+    &__link {
+        padding: 2rem;
+
+        &--active {
+            background-color: #4caf50;
+        }
+
+    }
+
+    &__link:not(:first-child) {
+        border-left: 1px solid #eee;
+    }
+
+    &__icon {
+        width: 5rem;
+        height: 5rem;
+        fill: #fff;
+    }
+}
