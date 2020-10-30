@@ -12,9 +12,9 @@ html {
   font-size: 62.5%; }
 
 .tabs {
-  margin: 0 auto;
-  width: 50vw;
-  height: 50vh; }
+  margin: 5rem 5rem;
+  width: 30vw;
+  height: 30vh; }
   .tabs__links {
     background-color: #eee;
     width: 100%;
@@ -59,6 +59,57 @@ html {
   .tabs__paragraph {
     font-size: 1.6rem; }
   .tabs .active {
+    background-color: lightgrey; }
+
+.vertical-tabs {
+  width: 45vw;
+  height: 35vw;
+  position: absolute;
+  top: 5rem;
+  right: 10rem;
+  display: flex; }
+  .vertical-tabs__links {
+    background-color: #eee;
+    display: flex;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column; }
+  .vertical-tabs__link {
+    display: inline-block;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: black; }
+    .vertical-tabs__link:hover {
+      background-color: #DCDCDC; }
+  .vertical-tabs__close {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 2.2rem;
+    cursor: pointer;
+    color: grey;
+    transition: all .2s; }
+    .vertical-tabs__close:hover {
+      color: black; }
+  .vertical-tabs__content {
+    padding: 2rem;
+    width: 100%;
+    border: 1px solid grey;
+    border-left: none;
+    animation: fadeEffect 1s; }
+    .vertical-tabs__content--Paris {
+      display: none; }
+    .vertical-tabs__content--Tokyo {
+      display: none; }
+  .vertical-tabs__title {
+    font-size: 3rem;
+    margin-bottom: 1rem; }
+  .vertical-tabs__paragraph {
+    font-size: 1.6rem; }
+  .vertical-tabs .active {
     background-color: lightgrey; }
 
 @keyframes fadeEffect {

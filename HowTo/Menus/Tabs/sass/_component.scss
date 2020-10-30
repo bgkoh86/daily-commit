@@ -1,7 +1,8 @@
+// horizon tabs
 .tabs {
-    margin: 0 auto;
-    width: 50vw;
-    height: 50vh;
+    margin: 5rem 5rem;
+    width: 30vw;
+    height: 30vh;
 
 
     &__links {
@@ -69,4 +70,84 @@
 .active {
     background-color: lightgrey;
 }
+}
+
+// vertical tabs
+.vertical-tabs {
+    width: 45vw;
+    height: 35vw;
+    position: absolute;
+    top: 5rem;
+    right: 10rem;
+
+    display: flex;
+
+    &__links {
+        background-color: #eee;
+        display: flex;
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 1.5rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            background-color: #DCDCDC;
+        }
+    }
+
+    &__close {
+        font-size: 2.5rem;
+        position: absolute;
+        top: 1.5rem;
+        right: 2.2rem;
+        cursor: pointer;
+        color: grey;
+        transition: all .2s;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    &__content {
+        padding: 2rem;
+        width: 100%;
+        border: 1px solid grey;
+        border-left: none;
+        animation: fadeEffect 1s;
+
+        &--London {
+
+        }
+
+        &--Paris {
+            display: none;
+        }
+
+        &--Tokyo {
+            display: none;    
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    &__paragraph {
+        font-size: 1.6rem;
+    }
+
+    .active {
+        background-color: lightgrey;
+    }
 }
