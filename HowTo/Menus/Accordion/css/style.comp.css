@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+.accordion {
+  width: 40%; }
+  .accordion__button {
+    display: block;
+    width: 100%;
+    height: 6rem;
+    border: none;
+    text-align: left;
+    padding-left: 2rem;
+    font-size: 2rem;
+    color: #444;
+    background-color: #eee;
+    transition: all .2s;
+    outline: none;
+    position: relative; }
+    .accordion__button:hover {
+      background-color: #ccc; }
+  .accordion__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: #555;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%); }
+  .accordion__content {
+    width: 100%;
+    height: 10rem;
+    background-color: yellow;
+    display: none; }
+  .accordion__paragraph {
+    font-size: 1.5rem;
+    padding: 2rem; }
+  .accordion .active {
+    background-color: #ccc; }
