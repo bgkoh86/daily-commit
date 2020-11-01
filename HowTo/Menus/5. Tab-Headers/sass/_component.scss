@@ -1,0 +1,92 @@
+.header {
+    width: 50vw;
+    height: 50vh;   
+    @include absCenter;
+
+    &__banner {
+        text-align: center;
+        color: $color-white;
+        width: 100%;
+        height: 100%;
+        animation: fadeEffect 1s;
+
+        &--London {
+            background-color: #FF5721;
+            // display: none;
+
+        }   
+
+
+        &--Paris {
+            display: none;
+            background-color: #4CAF4F;
+        }
+
+        &--Ottawa {
+            display: none;
+            background-color: #2396F3;
+
+        }
+
+        &--Tokyo {
+            display: none;
+            background-color: purple;
+
+        }
+
+        &__text {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-top: 2rem;
+        }
+
+        &__h2 {
+        }
+    }
+
+        &__links {
+            list-style: none;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        &__item {
+            width: 25%;
+            text-decoration: none;
+            font-size: 2rem;
+            text-align: center;
+
+
+        }
+
+        &__link {
+            display: inline-block;
+            text-decoration: none;
+            color: $color-black;
+            width: 100%;
+            background-color: #eee;
+            padding: 1.5rem;
+            outline: none;
+            cursor: pointer;
+
+            &:not(.active):hover {
+                background-color: lightgrey;
+            }
+
+        }
+
+        .heading-1 { 
+            padding-top: 10rem;
+        }
+
+        .active {
+            color: #fff;
+            background-color: #FF5721;
+        }
+}
