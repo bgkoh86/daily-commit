@@ -1,0 +1,96 @@
+.slideshow {
+    width: 50%;
+    @include absCenter;
+    border: 1px solid lightgrey;
+
+    &__box {
+        width: 100%;
+        position: relative;
+        animation: fadeEffect 2s;
+    }
+
+    &__number {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        font-size: 1.8rem;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+    }
+
+    &__caption {
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: .5rem 2rem;
+        bottom: 2rem;
+        color: white;
+        font-size: 2.4rem;
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__arrow {
+        width: 6rem;
+        height: 6rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        font-size: 3.5rem;
+        font-weight: 1200;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        &--prev { 
+            left: 1.6rem;
+        }
+
+        &--next { 
+            right: 1.6rem;
+        }
+    }
+
+    &__dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 1rem;
+    }
+
+    &__dot {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: lightgrey;
+        border-radius: 50%;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: grey;
+        }
+
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+    }
+
+    .active-dot {
+        background-color: grey;
+    }
+}
