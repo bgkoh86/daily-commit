@@ -1,0 +1,122 @@
+$pressed-btn-color: #4CAF50;
+$arrow-btn-color: orangered;
+$ripple-btn-color: skyblue;
+
+.container {
+  width: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  margin: 20rem auto;
+}
+
+// PRESSED-BTN
+.pressed-btn {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: $pressed-btn-color;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  transition: all .3s;
+
+  &:hover {
+    background-color: darken($pressed-btn-color, 2%)
+  }
+
+  &:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+}
+
+// ARROW-BTN
+.arrow-btn {
+  padding: 1.5rem 3rem;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: $arrow-btn-color;
+  border: none;
+  border-radius: 15px;
+  transition: all .3s;
+
+  &__content {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    position: relative;
+    transition: all .5s;
+
+    &::after {
+      content: "\00BB";
+      position: absolute;
+      font-size: 3rem;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 7.5rem;
+      opacity: 0;
+      transition: all .5s;
+    }
+  }
+
+  &:hover {
+    background-color: darken($arrow-btn-color, 3%);
+  }
+
+  &:hover &__content {
+    transform: translateX(-1rem);
+  }
+
+  &:hover &__content::after {
+    opacity: 1;
+    left: 7.2rem;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+// RIPPLE BTN
+.ripple-btn {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: $ripple-btn-color;
+  border: none;
+  transition: all .3s;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    background-color: darken($ripple-btn-color, 5%)
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: lighten($ripple-btn-color, 15%);
+    opacity: 0;
+    transition: all .6s;
+    transform-origin: bottom left;
+  }
+
+  &:active::after {
+    transform: scale(0, 0);
+    opacity: 1;
+    transition: 0s;
+  }
+}

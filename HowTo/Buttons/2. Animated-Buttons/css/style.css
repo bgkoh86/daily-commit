@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20rem auto; }
+
+.pressed-btn {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  transition: all .3s; }
+  .pressed-btn:hover {
+    background-color: #49a84d; }
+  .pressed-btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px); }
+
+.arrow-btn {
+  padding: 1.5rem 3rem;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: orangered;
+  border: none;
+  border-radius: 15px;
+  transition: all .3s; }
+  .arrow-btn__content {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    position: relative;
+    transition: all .5s; }
+    .arrow-btn__content::after {
+      content: "\00BB";
+      position: absolute;
+      font-size: 3rem;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 7.5rem;
+      opacity: 0;
+      transition: all .5s; }
+  .arrow-btn:hover {
+    background-color: #f04100; }
+  .arrow-btn:hover .arrow-btn__content {
+    transform: translateX(-1rem); }
+  .arrow-btn:hover .arrow-btn__content::after {
+    opacity: 1;
+    left: 7.2rem; }
+  .arrow-btn:active {
+    transform: translateY(2px); }
+
+.ripple-btn {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: skyblue;
+  border: none;
+  transition: all .3s;
+  position: relative;
+  z-index: 1; }
+  .ripple-btn:hover {
+    background-color: #71c5e7; }
+  .ripple-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #c9e9f6;
+    opacity: 0;
+    transition: all .6s;
+    transform-origin: bottom left; }
+  .ripple-btn:active::after {
+    transform: scale(0, 0);
+    opacity: 1;
+    transition: 0s; }

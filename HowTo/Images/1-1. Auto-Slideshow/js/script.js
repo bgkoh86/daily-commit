@@ -5,7 +5,6 @@ $(document).ready(function() {
     
     // showSlide logic
     function showSlides() {
-        console.log(slideIndex);
         let imgs = $(".slideshow__box");
         let currentImg = imgs[slideIndex];
         let dots = $(".slideshow__dot");
@@ -24,10 +23,9 @@ $(document).ready(function() {
         }
 
     setTimeout(showSlides, 2000);
-
     };
 
-    // dot click
+    // dot click logic
     $(".slideshow__dot").click(function() { 
         var imgs = $(".slideshow__box");  // array
         var dotIndex = $(this).index();  // index
