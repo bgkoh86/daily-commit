@@ -3,6 +3,8 @@
 /* Grid-related CSS */
 * { 
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 :root {
@@ -14,6 +16,10 @@
 .months { grid-area: months; }
 .days { grid-area: days; }
 .squares { grid-area: squares; }
+
+.container {
+  text-align: center;
+}
 
 .graph {
   display: inline-grid;
