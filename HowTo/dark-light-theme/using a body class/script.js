@@ -1,6 +1,7 @@
 // javascript
-const btn = document.querySelector(".btn-toggle")
+const btn = document.querySelector(".btn-toggle");
 
+console.log(btn);
 btn.addEventListener('click', function() {
   document.body.classList.toggle("dark-theme");
 });

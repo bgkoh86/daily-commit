@@ -1,0 +1,19 @@
+body {
+  --text-color: #eee;
+  --bkg-color: #121212;
+  --anchor-color: #809fff;
+  --paragraph-color: lightblue;
+}
+
+body {
+  background-color: var(--bkg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--anchor-color);
+}
+
+p {
+  color: var(--paragraph-color);
+}
