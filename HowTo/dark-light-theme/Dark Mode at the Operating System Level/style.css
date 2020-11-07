@@ -2,9 +2,23 @@ body {
   --text-color: #222;
   --bkg-color: #fff;
 }
+
+body.light-theme {
+  --text-color: #222;
+  --bkg-color: #fff;
+}
+
 body.dark-theme {
   --text-color: #eee;
   --bkg-color: #121212;
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+h1, p {
+  color: var(--text-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,13 +32,4 @@ body.dark-theme {
     --text-color: #222;
     --bkg-color: #fff;
   }
-}
-
-body {
-  background: var(--bkg-color);
-}
-
-h1,
-p {
-  color: var(--text-color);
 }

@@ -1,0 +1,25 @@
+body.light-theme {
+  --bgc-color: black;
+  --txt-color: blue;
+}
+
+body {
+  --bgc-color: grey;
+  --txt-color: green;
+}
+/* 
+h1.active {
+  --txt-color: green;
+} */
+
+span {
+  color: var(--txt-color);
+}
+
+h1 {
+  color: var(--txt-color);
+}
+
+p {
+  color: var(--txt-color);
+}
