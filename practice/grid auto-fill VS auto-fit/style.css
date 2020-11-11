@@ -1,0 +1,49 @@
+.grid1 {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid1 > li {
+  background: goldenrod;
+  text-align: center;
+  padding: .5rem;
+}
+
+.grid1 > li:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+.grid2 {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.grid2 > li {
+  background: goldenrod;
+  text-align: center;
+  padding: .5rem;
+}
+
+.grid2 > li:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+.grid3 {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+  width: 300px;
+}
+
+.grid3 > li {
+  background: goldenrod;
+  text-align: center;
+  padding: .5rem;
+}
+
+.grid3 > li:not(:last-child) {
+  border-right: 1px solid #fff;
+}
