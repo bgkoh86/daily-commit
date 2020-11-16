@@ -1,0 +1,22 @@
+.myprogress {
+   width: 50%;
+   background-color: #ddd;
+}
+
+.mybar {
+   width: 0;
+   height: 30px;
+   background-color: #4caf50;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.btn {
+   margin-top: 1rem;
+   padding: .5rem
+}
+
+
+
