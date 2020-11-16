@@ -1,0 +1,18 @@
+h1 {
+  font-size: 20px;
+  color: black;
+  /* animation: moveToRight 5s; */
+}
+
+@keyframes moveToRight {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
