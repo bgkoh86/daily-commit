@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  position: relative;
+}
+
+.my-video {
+  width: 100%;
+  display: block;
+}
+
+.content {
+  position: absolute;
+  background-color:rgba(0,0,0,0.5);
+  bottom: 0;
+  left: 0;
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+.pause-btn {
+  display: none;
+  width: 5rem;
+  padding: .6rem;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  transition: all 1s;
+  box-shadow: none;
+}
+
+.pause-btn:hover {
+  background-color: lightsteelblue;
+}
