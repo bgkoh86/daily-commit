@@ -1,0 +1,104 @@
+body {
+  text-align: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #000;
+  font-size: 20px;
+  margin-top: 4rem;
+}
+
+.tooltiptext-top {
+  position: absolute;
+  left: 0;
+  bottom : 180%;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  padding: 5px 0;
+  transition: opacity .3s;
+  visibility: hidden; 
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.tooltiptext-bottom {
+  position: absolute;
+  left: 0;
+  top : 180%;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  padding: 5px 0;
+  transition: opacity .3s;
+  visibility: hidden; 
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.tooltiptext-top::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltiptext-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+
+
+.tooltip:hover .tooltiptext-top {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptext-bottom {
+  opacity: 1;
+  visibility: visible;
+}
+
+.vl {
+  height: 500px;
+  background-color:grey;
+  border-left: 6px solid red;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.down-btn {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  background-color: skyblue;
+  padding: 8px 20px;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  cursor: pointer;
+}
+
+.email {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  text-decoration: none;
+  color: gray;
+  font-size: 1.2rem;
+}
